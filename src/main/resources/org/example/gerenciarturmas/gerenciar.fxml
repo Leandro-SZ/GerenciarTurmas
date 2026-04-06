@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gerenciarturmas.HelloController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" text="Gerenciamento de Turmas" textFill="#004587">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" right="60.0" />
+               </VBox.margin>
+            </Label>
+            <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="362.0" promptText="Buscar">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></TextField>
+            <TableView maxHeight="480.0" maxWidth="480.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn maxWidth="250.0" minWidth="180.0" prefWidth="180.0" text="Nome/Codigo da turma" />
+                <TableColumn prefWidth="78.0" text="Turno" />
+                  <TableColumn prefWidth="136.0" text="Instrutores" />
+                  <TableColumn prefWidth="113.0" text="Ações" />
+              </columns>
+            </TableView>
+         </children></VBox>
+   </center>
+   <left>
+      <VBox prefHeight="332.0" prefWidth="138.0" style="-fx-background-color: F0F0F2;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../../imagem/senac-logo-png_seeklogo-242013.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buscarTurmas" mnemonicParsing="false" onAction="#onBuscarTurmas" prefHeight="25.0" prefWidth="105.0" styleClass="accent" text="Página inicial">
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" styleClass="accent" text="Clientes">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" styleClass="accent" text="Serviços">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" styleClass="accent" text="Turmas">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin></Button>
+         </children></VBox>
+   </left>
+   <bottom>
+      <VBox prefHeight="51.0" prefWidth="567.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="138.0" style="-fx-background-color: F0F0F2;">
+               <children>
+                  <Button layoutX="51.0" layoutY="2.0" mnemonicParsing="false" styleClass="danger" text="Sair" />
+               </children>
+            </Pane>
+            <Pane minHeight="10.0" style="-fx-background-color: F0F0F2;" />
+         </children>
+         <BorderPane.margin>
+            <Insets right="11.0" />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="10.0" prefWidth="600.0" style="-fx-background-color: F0F0F2;" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <VBox prefHeight="381.0" prefWidth="11.0" style="-fx-background-color: F0F0F2;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="-58.0" />
+         </BorderPane.margin></VBox>
+   </right>
+</BorderPane>
